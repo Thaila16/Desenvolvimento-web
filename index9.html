@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- ALUNA: THAILA CASAL
+        9)	Utilize algum trecho de um código antigo seu, 
+        mostre ele na sua página e explique com suas 
+        palavras o que ele faz (não vale código html).  -->
+        <pre><code>
+            while (!exit) {
+                const option = prompt("Escolha uma opção:\n1 - Fazer login\n2 - Cadastrar novo usuário\n3 - Sair");
+                    switch (option) {
+                    case "1":
+                        const user1 = prompt("Digite o nome");
+                        const email1 = prompt("Digite um email");
+                        const pass1 = prompt("Digite a senha");
+                        await fazerLogin(user1, email1, pass1);
+                        break;
+                    case "2":
+                        const user2 = prompt("Digite um nome");
+                        const email2 = prompt("Digite um email");
+                        const pass2 = prompt("Digite uma senha");
+                        await registrarUsuario(user2, email2, pass2);
+                        break;
+                    case "3":
+                        console.log("Saindo...");
+                        exit = true;
+                        break;
+                    default:
+                        console.log("Opção inválida.");
+                        break;
+                    }
+            }</code></pre>
+            <h2>Explicação</h2>
+            <p>O código </p>
+    </body>
+</html>
