@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formas</title>
+        <title>Formas do CSS</title>
         <style>
             body{
                 background-color: black;
@@ -16,17 +16,41 @@
                 color: rgb(220, 183, 255);
                 font-family: 'Courier New', Courier, monospace;
             }
-            mark{
-                background-color: rgb(236, 208, 255);
-            }
         </style>
+        <!--mark{
+                background-color: rgb(236, 208, 255);
+    } -->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1 style="color: white; font-family: Algerian;">Formas de Utilizar o CSS </h1>
         <hr>
         <h2>Primeira Forma</h2>
-        <p style="color: white;">A primeira forma é pelo "style.css" que é um <mark>novo arquivo</mark>, <br>
+        <p style="color: white;">A primeira forma é "inline", utilizado normalmente quando só é necessário <br>
+            <mark style="background-color: blueviolet;">editar aquela parte em específico</mark>, e não um conjunto com a mesma configuração. Para isso é utilizado <br>
+            dentro da tag com o elemento <mark style="background-color: rgb(113, 37, 143);">"style"</mark> , definindo o que deseja editar. <br>
+            <ol type="I" start="1" style="color: rgb(220, 183, 255);"><li><h4>Pontos Positivos:</h4></li></ol>
+            <ol type="1" start="1" style="color: white">
+                <li>Não precisa <mark style="background-color: rgb(236, 220, 252);">depender</mark> de arquivos externos;</li>
+                <li>Aplicação <mark style="background-color: rgb(220, 183, 255);">rápida</mark>.</li></ol>
+            <ol type="I" start="2" style="color:white"><li><h4>Pontos Negativos:</h4></li></ol>
+            <ol type="1" start="1" style="color: white;">
+                <li><mark style="background-color: rgb(161, 110, 209);">Toda vez</mark> ter que adicionar o "style" para a mesma utilização dos nateriores;</li>
+            </ol>
+        </p>
+        <h2>Segunda Forma</h2>
+        <p style="color: white;">A segunda forma é pela tag head, geralmente utilizadao para <br>
+            definir um padrão específico para uma tag dentro do cabeçalho do código HTML. Assim <br>
+            evitando o uso contínuo do tag style. <br> 
+            <ol type="I" start="1" style="color: rgb(220, 183, 255);"><li><h4>Pontos Positivos:</h4></li></ol>
+            <ol type="1" start="1" style="color: white">
+                <li></li>
+                <li></li></ol>
+            <ol type="I" start="2" style="color: rgb(220, 183, 255);"><li><h4>Pontos Negativos:</h4></li></ol>
+                <li></li>
+        </p>
+        <h2>Terceira Forma</h2>
+        <p style="color: white;">A Terceira forma é pelo "style.css" que é um <mark>novo arquivo</mark>, <br>
             onde é mais fácil para o usuário ter a vizualização de como está sendo feito o visual do site <br>
             e deixando o HTML para os códigos do site e geralmente utilizado para editar somente <br>
             partes específicas do CSS. <br>
@@ -37,6 +61,5 @@
             <ol type="I" start="2" style="color: rgb(220, 183, 255);"><li><h4>Pontos Negativos:</h4></li></ol>
                 <li></li>
         </p>
-        <h2>Segunda Forma</h2>
     </body>
 </html>

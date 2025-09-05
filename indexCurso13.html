@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo/logo-curso.png" type="image/x-icon">
+    <title>Desenvolvimento de Sistemas</title>
+    <!-- ALUNA: THAILA CASAL
+    13)	Desenvolva uma página web do Curso Técnico de Desenvolvimento de Sistemas, 
+    que apresente informações do curso, disciplinas em destaque, professores e alunos. 
+    Utilize todos os conhecimentos adquiridos até aqui em HTML e CSS. 
+    Esta atividade é individual e vale nota.
+    <div class="divisao1"><section class="Informações"></section></div>
+    <section ><p>primeira section</p></section>
+    <section class="caixa1">
+        <p></p>
+    </section>
+    border: solid black;-->
+    <style>
+        ul{
+            justify-content: center;
+        }
+        .cabecalho{
+            display: flex;
+        }
+        body{
+            background-color: rgb(249, 243, 255);
+        }
+        h1{
+            font-family: Apple Chancery, cursive;
+            display: flex;
+            justify-content: center;
+            font-size: 350%;
+        }
+        .quadro{
+            display: flex;
+            justify-content: center;
+        }
+        .Informações{
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            width: 1000px;
+            height: 190px;
+            word-wrap: break-word;
+            border: solid black;
+            text-align: center;
+            font-size: 125%;
+        }
+        .logo{
+            display: inline-block;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: flex;
+        }
+        .logooo{
+            display: inline-block;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: flex;
+        }
+        .quadroMatéria{
+            justify-content: center;
+            margin-left: 550px;
+            display: flex;
+            width: 750px;
+            height: 800%;
+            border: solid black;
+        }
+        .m{
+            text-align: center;
+            display: inline;
+            margin-left: 50px;
+        }
+        .mm{
+            text-align: center;
+            justify-content: center;
+            font-size: 100%;
+        }
+        .alunos{
+            text-align: center;
+            font-size: 190%;
+        }
+        .turma{
+            margin-left: 270%;
+            display: flex;
+            justify-content: center;
+            display: inline-block;
+            margin-right: 10000px;
+        }
+        .matéria{
+            text-align: center;
+            font-size: 190%;
+        }
+        .convidados{
+            text-align: center;
+            font-size: 190%;
+        }
+        .rodape{
+            justify-content: center;
+            display: flex;
+        }
+        .cedup{
+            margin-left: 50px;
+            margin-right: 50px;
+            display: flex;
+        }
+        .pronatec{
+            margin-left: 50px;
+            margin-right: 50px;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!---->
+    <div class="cabecalho">
+        <div class="foto">
+            <section class="logo">
+                <img src="logo/logo-média.png" alt="Está imagem não carregou.">
+            </section>
+        </div>
+        <h1 style="color: rgb(106, 27, 180);">Curso Desenvolvimento de Sistemas - Cedup</h1>
+        <div>
+            <section class="logooo">
+                <img src="logo/logo-média.png" alt="Está imagem não carregou.">
+            </section>
+        </div>    
+    </div>
+    <div class="quadro">
+        <section class="Informações" style="font-size: 150%;">
+            <p>Um curso profissionalizante em Desenvolvimento de Sistemas; <br>
+                Com certificado técnico apenas com 1 ano e meio de aprendizado; <br>
+                Todas as aulas presencias de segunda-feira à sexta-feira no periodo da noite ou da tarde; <br>
+                Total de 1200 horas, recebendo bolsa por dia frequentado; <br>
+                Alunos de escolas que estejam cursando o 1° ano de E.M. ou o 2° ano de E.M.; <br>
+            </p>
+        </section>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="quadroMatéria">
+        <section class="texto">
+            <h1 style="color: rgb(106, 27, 180);">Matérias</h1>
+                <section class="matéria">
+                    <h3><a href="módulo1Curso.html">1° Módulo:</a></h3>
+                    <ul type="disc">
+                        <li>Sistemas de informações;</li>
+                        <li>Introdução a programação;</li>
+                        <li>Inglês aplicado;</li>
+                        <li>Introdução a banco de dados;</li>
+                        <li>Infraestrutura computacional;</li>
+                    </ul><br>
+                    <h3><a href="módulo2Curso.html">2° Módulo:</a></h3>
+                        <ul type="disc">
+                            <li>Relações humanas;</li>
+                            <li>Programação orintada a objetos;</li>
+                            <li>Linguagem SQL;</li>
+                            <li>Modelagem de Sistemas / UML;</li>
+                            <li>Desenvolvimento web 1;</li>
+                        </ul> <br>
+                    <h3><a href="módulo3Curso.html">3° Módulo:</a></h3>
+                    <ul type="disc">
+                        <li>Metodologias ágeis;</li>
+                        <li>Computação em nuvem e web services;</li>
+                        <li>Qualidade e testes de software;</li>
+                        <li>Prototipagem em UI/UX design;</li>
+                        <li>Desenvolvimento web 2;</li>
+                        <li>Empreendedorismo, criatividade e inovação</li>
+                    </ul>
+                </section>
+            <h1 style="color: rgb(106, 27, 180);">Turma 2024-2025</h1>
+                <section class="alunos">
+                    <h3><a href="turma.html">Turma Completa</a></h3>
+                    <ul type="disc">
+                        <li>Alunos</li>
+                        <li>Fotos da turma</li>
+                    </ul>
+                </section>
+                <section class="convidados">
+                    <h1 style="color: rgb(106, 27, 180); font-size: 175%;">Convidados</h1>
+                    <h3><a href="convidados.html">Cadastros dos Nomes dos convidados</a></h3>
+                    <ul type="disc">
+                        <li>Lista</li>
+                    </ul>
+                </section>
+        </section>
+         <!--<div class="turma">
+            <section>
+                <img src="logo/turma.png" alt="Está imagem não carregou.">
+            </section>
+           <section>
+                <img src="logo/turmaaaaaa.png" alt="">
+            </section>
+        </div>-->
+    </div>
+    <div class="rodape">
+        <div class="foto">
+            <br>
+            <br>
+            <br>
+            <section class="cedup">
+                <img src="logo/logoCedup.png" alt="Está imagem não carregou.">
+            </section>
+        </div>
+        <div>
+            <section class="pronatec">
+                <img src="logo/pronatecLogo.png" alt="Está imagem não carregou.">
+            </section>
+        </div>    
+    </div>
+    <!--<div class="convidados">
+        
+    </div>-->
+    <footer style="text-align: center;" style="background-color: rgb(136, 50, 221);">
+        <p>R. Assis Brasil, 119 - Maria Goretti, <br>
+            Chapecó - SC, 89801-355</p>
+    </footer>
+</body>
+</html>
