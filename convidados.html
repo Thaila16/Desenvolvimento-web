@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo/logo-curso.png" type="image/x-icon">
+    <title>Cadastro de Convidados</title>
+    <style>
+        body{
+            background-color: rgb(249, 243, 255);
+        }
+        h1{
+            font-family: Apple Chancery, cursive;
+            display: flex;
+            justify-content: center;
+            font-size: 350%;
+            color: rgb(106, 27, 180);
+        }
+        h2{
+            font-family: Apple Chancery, cursive;
+            display: flex;
+            justify-content: center;
+            font-size: 250%;
+            color: rgb(106, 27, 180);
+        }
+        li{
+            text-align: center;
+            font-size: 150%;
+        }
+        ul{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro dos Nomes</h1>
+
+    <form id="lista" style="text-align: center; font-size: 250%;">
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome" required style="font-size: 70%;">
+        <button type="submit" style="font-size: 70%;">Registrar</button>
+    </form>
+
+    <br>
+    <hr>
+    <h2>Lista</h2>
+    <ul id="listaNomes"></ul>
+
+    <script>
+        const form = document.getElementById("lista");
+        const lista = document.getElementById("listaNomes");
+
+        form.addEventListener("submit", function(event){
+            event.preventDefault();  // Impede o reload da página
+
+            const n = document.getElementById("nome").value;
+            
+            // Criar o item da lista
+            const li = document.createElement("li");
+            li.textContent = `${n}`;
+
+            lista.appendChild(li);  // Adiciona na lista
+            form.reset();  // Limpa os campos
+        });
+    </script>
+</body>
+</html>
