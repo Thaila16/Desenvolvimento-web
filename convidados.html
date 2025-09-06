@@ -24,11 +24,15 @@
             color: rgb(106, 27, 180);
         }
         li{
-            text-align: center;
+            
             font-size: 150%;
         }
         ul{
-            display: inline;
+            display: inline-block;
+            justify-content: center;
+        }
+        .resp{
+            text-align: center;
         }
     </style>
 </head>
@@ -44,7 +48,10 @@
     <br>
     <hr>
     <h2>Lista</h2>
-    <ul id="listaNomes"></ul>
+    <div class="resp">
+        <ul id="listaNomes"></ul>
+    </div>
+    
 
     <script>
         const form = document.getElementById("lista");
